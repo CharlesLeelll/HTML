@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>main.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    <div align="center"><!-- 控制内容居中对齐 -->
+	    <div style="width: 600px;" align="left">
+	    <h3>菲丽会员</h3>
+	    <!-- 创建1个内联窗口,显示条例信息 -->
+	    <iframe src="items.html" width="500px" height="300px" frameborder="1" style="border:2px #ccc solid" name="myIframe"></iframe><br>
+	    <input type="checkbox">您是否同一以上条例
+	    </div>
+	    
+	    <!-- 链接 
+	    a标签的target控制打开网页的方式: _self _blank _parent _top   窗口名[iframe或frame]
+	    -->
+	    <a href="iframe_name.html" target="myIframe">iframe_name.html</a>
+    </div>
+    <!-- 
+    iframe标签: 创建1个内联窗口[行内元素的窗口]
+    src: 控制窗口要显示的页面,属性值为页面的URL
+    width/height: 控制窗口的尺寸
+    name: 设置当前窗口的名字
+     -->
+  </body>
+</html>

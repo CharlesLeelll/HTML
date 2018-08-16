@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>cols.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  <!-- 
+  frameset中文意思为: 框架集 [frame框架  set集合,设置 ]
+  frameset标签用于创建一个存放frame[框架/窗口]的容器
+  rows设置和说明,小窗口的尺寸和存放方式[独占1行]
+  cols设置和说明,小窗口的尺寸和存放方式[独占1列]
+  
+  注意: 必须删除body标签,表示当前页面为1个框架集页面
+  
+  frame表示窗口/框架,可以存放或显示指定网页的内容
+  src: 设置要显示的网页
+   -->
+  <frameset cols="100px,300px,*" frameborder="no"><!-- 创建存放窗口[frame]的容器 -->
+  <frame src="one.html" noresize="noresize" frameborder="0"><!-- 创建小窗口 -->
+  <frame src="two.html" noresize="noresize" frameborder="0"><!-- 创建小窗口 -->
+  <frame src="three.html" frameborder="0"><!-- 创建小窗口 -->
+  </frameset>
+</html>

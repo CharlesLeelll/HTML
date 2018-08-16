@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>盒子模型.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <style type="text/css">
+    div{
+    width: 500px;
+    height: 100px;
+    border: 2px blue solid;
+    }
+    p{
+    width: 400px;
+    height: 100px;
+    border: 2px red solid;
+    }
+    span{
+    border: 2px yellow solid;
+    }
+    
+    #div1{
+    padding: 100px 50px; 
+    }
+    #div2{
+    margin: 10px 50px;
+    }
+    #div3{
+    border: 20px red solid;
+    padding: 50px ;
+    margin: 10px 50px;
+    }
+    </style>
+  </head>
+  
+  <body>
+    盒子模型测试. <br>
+    <!-- 
+    网页中的所有标签都是一个矩形,像一个个盒子,因此将所有标签比作盒子,整体称为盒子模型.
+    
+    宽/高: 默认指内容的宽和高,若设置了width/height,将以设置的值作为内容宽和高
+    内边距: 指内容与边框的距离.默认为0或浏览器的默认值
+       padding: 值1 值2 值3 值4; 设置上右下左四个方向的内边距
+       padding: 值1 值2; 设置上下  左右的内边距
+       padding: 值1; 设置四个方向的内边距为值1
+       padding-top/bottom/left/right: 值; 设置指定方向的内边距
+       
+   外边距: 指当前标签的边框与父标签或临近标签的边框的距离
+       margin: 值1 值2 值3 值4; 设置上右下左四个方向的外边距
+       margin: 值1 值2; 设置上下  左右的外边距
+       margin: 值1; 设置四个方向的外边距为值1
+       margin-top/bottom/left/right: 值; 设置指定方向的外边距
+      边框: 指标签或盒子的边框
+      border: 尺寸 颜色 性质; 设置边框的尺寸,颜色,性质
+      
+      计算水平尺寸 = 左外边距+左边框+左内边距+宽+右内边距+右边框+右外边距
+      计算垂直尺寸= 上外边距+上外边框+上内边距+高+下内边距+下边框+下外边距
+      -->
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+    
+    <p>p1</p>
+    <p>p2</p>
+    
+    <span>span1</span>
+    <span>span2</span>
+  </body>
+</html>

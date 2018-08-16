@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+  <head>
+    <title>浮动</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<style type="text/css">
+	.div{
+	width: 100px;height: 50px;border: 2px blue solid; 
+	float: left;
+	}
+	.newDiv{
+	width: 100px;height: 50px;border: 2px red solid; 
+	clear: left;
+	}
+	</style>
+  </head>
+  
+  <body>
+	 浮动的作用:可以使标签统一向指定方向对齐 <br>
+	 浮动的影响: 浮动标签会影响后面紧挨着 的其他标签一起浮动<br>
+	 浮动的使用场合: 图片排列  导航栏排列<br>
+	 注意: 
+	 <!--
+	 任务一: 使A B C D向左靠齐,排成一排 
+	 任务二: 在D后添加一个div,观察div的位置,及浮动的影响
+	 -->
+    <div>
+    
+    <div  class="div">A</div>
+    <div  class="div">B</div>
+    <div  class="div">C</div>
+    <div  class="div">D</div>
+    <div class="newDiv">new</div>
+    <div class="newDiv">new</div>
+    </div>
+  </body>
+</html>

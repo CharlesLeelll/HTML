@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Test.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <style type="text/css">
+    /* 
+    style标签对之间只能编写CSS代码,遵序CSS语法. 
+    格式:
+    选择器A{样式属性名:值;样式属性名:值;....}
+    选择器B{样式属性名:值;样式属性名:值;....}
+    .....
+    */
+    p{
+    width: 500px;
+    height: 50px;
+    border: 2px yellow solid;
+    background-color: #ccc;
+    }
+    </style>
+    
+    <style type="text/css">
+    /*  style标签对之间只能编写CSS代码,遵序CSS语法. */
+    @IMPORT url("importCSS.css");
+    </style>
+    
+    <link rel="stylesheet" type="text/css" href="linkCSS.css">
+  </head>
+  
+  <body>
+    引入CSS到HTML. <br>
+    <!-- 
+    引入CSS到HTML: 行内式,内嵌式,导入式,链接式.
+    根据样式代码的编写位置,分为: 内部样式[行内式,内嵌式]和外部样式[导入式,链接式]
+    内部样式: 每次访问页面时,都会重新加载和解析所有的CSS代码.  
+    特点: 效率相对较低,不会造成缓存影响.
+    
+    外部样式: 当第一次访问网页时,浏览器下载相应的CSS文件.之后再次访问时,可能不会重新下载CSS文件,而是直接使用缓存的CSS文件.  
+    特点: 提高访问效率,容易造成缓存影响[开发人员更改的代码,未能及时更新]
+     -->
+    <!-- 
+    行内式:
+    格式:<标签名 style="CSS样式代码,必须遵序CSS语法: 样式属性名:值;样式属性名:值;" ></标签名>
+     -->
+     <span style="color:red;font-size: 30px;background-color: green;">span标签</span>
+     
+     <!-- 
+     内嵌式:
+     格式: 在head标签对之间编写style标签,在该标签对之间编写CSS代码
+      -->
+      <p>p标签</p>
+      
+      <!-- 
+      导入式:
+      格式: 在head标签对之间编写style标签,在标签对之间编写导入命令: @import url("CSS文件路径");
+       -->
+       <div>div标签</div>
+       
+       <!-- 
+       链接式:
+       格式: 在head标签对之间编写link标签,设置要引入的CSS文件
+        -->
+       <center>center标签</center>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>文档流.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <style type="text/css">
+    div{
+    width: 150px;height: 100px;border: 2px red solid;
+    display: inline;
+    }
+    p{
+    width: 100px;height: 100px;border: 1px blue solid;
+    }
+    span{
+    width: 400px;border: 1px blue solid;height: 200px;
+    margin: 100px;
+    display: block;
+    }
+    </style>
+  </head>
+  
+  <body>
+    文档流 <br>
+    <!-- 
+    文档流: 标签的排列方式/布局方式
+    标准文档流: 在不使用任何与布局或定位相关的CSS时,标签的布局方式 ,也称为静态布局
+    静态布局原则: 
+    由上到下[块级元素],从左到右[行内元素]
+    
+    块级元素: 始终占据一行,与其他同级的块级元素从上到下排列.   默认宽为100%,高由内容决定     块级元素含有外边距和内边距
+    行内元素: 标签内容从左到右显示,占据的空间由标签的内容决定.  默认宽由内容决定,高也由内容决定.  行内元素不含有外边距和内边距
+    
+    常见的块级元素: div p li 等等
+    常见的行内元素: span input label 等等
+    
+    行内元素与块级元素转换:
+    display: inline /  block 等等
+     -->
+    <div>
+    div1
+    </div>
+    <div>
+    div2
+    </div>
+    
+    <p>p1</p>
+    <p>p2</p>
+    
+    <span>span1</span>
+    <span>span2</span>
+    <span>span3</span>
+    
+    <p>p3</p>
+    
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>超链接.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+    超链接测试 <br>
+    <!-- 
+    超链接,也称为锚标签,使用a标签实现.
+    a标签: 可以控制当前页面跳转到其他页面中.
+    href: 设置要跳转到的页面,属性值为页面的URL
+           标签对之间的内容作为触发跳转的热点
+     -->
+     <!--当前项目: 文字连接 -->
+     <a href="../清单标签.html">清单标签.html</a>
+     <!-- 其他项目: http://域名称   或   http://主机名或IP:端口号/项目名/资源名 -->
+     <a href="http://www.baidu.com">百度一下</a>
+     <!-- 图片链接 -->
+     <a href="http://www.baidu.com"><img src="baidu.png"></a>
+     
+     <!-- 同一页面跳转:
+     淘宝详情页特别,最后面有 "回到顶部" 360导航页等等
+      -->
+      <a href="book.html">进入小说频道</a>
+      
+      <!-- 
+      控制打开资源的方式:
+      target: 
+      _self[默认值,在当前窗口打开新资源] 
+      _blank[在新窗口中打开资源]
+      _parent[在父窗口中打开资源]
+      _top[在顶层窗口中打开]
+      frameset名[在指定框架窗口中打开]
+       -->
+       <a href="book.html" target="_blank">进入小说频道</a>
+  </body>
+</html>

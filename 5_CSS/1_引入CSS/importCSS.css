@@ -1,0 +1,14 @@
+@CHARSET "UTF-8"; /* 告诉浏览器当前文件的编码为UTF-8 */
+/*
+CSS文件中只能编写CSS代码,遵序CSS语法.
+
+ 问题: CSS文件中能够或需要编写style标签吗? 为什么吗?
+ 不能. style标签时HTML语法,css文件只能编写css代码.
+*/
+
+div{
+    width: 500px;
+    height: 100px;
+    background-color: #4FB6CC;
+    border: 2px blue solid;
+}
